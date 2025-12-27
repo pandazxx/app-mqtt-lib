@@ -3,6 +3,7 @@ menu "app_mqtt_lib options"
 config APP_MQTT_LIB
     bool "Enable app_mqtt_lib Library"
     default y
+    depends on APP_POLL_LIB && MQTT_LIB
     help
       Enable support for app_mqtt_lib.
 
